@@ -15,7 +15,4 @@ router
 
 router.param("userId", userCtrl.userByID);
 
-// creating a new user
-router.route("/api/users").post(userCtrl.create);
-
 export default router;

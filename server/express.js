@@ -6,6 +6,7 @@ import cors from "cors";
 import helmet from "helmet";
 
 import template from "../template.js";
+import userRoute from "./routes/user.routes.js";
 
 const app = express();
 
@@ -19,5 +20,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.status(200).send(template());
 });
+
+app.use("/", userRoute);
 
 export default app;

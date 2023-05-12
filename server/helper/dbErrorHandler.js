@@ -1,3 +1,6 @@
+// add meaningful error message
+// when handling errors that are thrown by mongoose
+
 const getErrorMessage = (err) => {
   let message = "";
   if (err.code) {

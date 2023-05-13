@@ -7,6 +7,7 @@ import helmet from "helmet";
 
 import template from "../template.js";
 import userRoute from "./routes/user.routes.js";
+import authRoute from "./routes/auth.route.js";
 
 const app = express();
 
@@ -22,5 +23,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/", userRoute);
+app.use("/", authRoute);
 
 export default app;

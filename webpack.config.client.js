@@ -1,5 +1,6 @@
-const path = require("path");
-const webpack = require("webpack");
+import path from "path";
+import webpack from "webpack";
+
 const CURRENT_WORKING_DIR = process.cwd();
 
 const config = {
@@ -39,4 +40,4 @@ const config = {
   },
 };
 
-module.exports = config;
+export default { config };

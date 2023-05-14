@@ -1,13 +1,13 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "./core/Home";
+import { Routes, Route } from "react-router-dom";
+import Home from "./core/Home.js";
 
 export default function MainRouter() {
   return (
     <div>
-      <Switch>
+      <Routes>
         <Route exact path="/" Component={Home} />
-      </Switch>
+      </Routes>
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import createTheme from "@mui/material/styles/createTheme.js";
 import pink from "material-ui/colors/pink.js";
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     useNextVariants: true,
   },
